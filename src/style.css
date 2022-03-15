@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* here the css reset ends */
+
+body {
+  background: url(./images/pexels-photo-1118873.webp) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.temp {
+  font-size: large;
+  font-size: 120px;
+}
+
+#weather {
+  width: 30vw;
+}
+
+#weather,
+#main,
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+#secondary {
+  display: flex;
+  align-items: space-between;
+}
+
+.controls {
+  justify-content: center;
+  width: 20vw;
+}
+
+.controls > span {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+span {
+  margin: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#secondary > span {
+  font-size: 20px;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+.location {
+  font-size: 30px;
+}
+
+input[type="search"] {
+  border-radius: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+input:hover {
+  background-color: rgb(204, 224, 218);
+}
+
+#error {
+  display: block;
+  height: 20px;
+  color: red;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.switch {
+  display: flex;
+  justify-content: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+#deg {
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+}

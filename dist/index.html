@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bundle.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="content">
+            <div id="weather">
+                <div id="main">
+                    <span class="location">City</span>
+                    <span class="temp">C &#176</span>
+                    <span class="country">Country</span>
+                    <span class="description">Weather details</span>
+                </div>
+                <div id="secondary">
+                    <span class="windspeed">Wind speed</span>
+                    <span class="feelslike">Feels like</span>
+                    <span class="humidity">Humidity</span>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <span>Current Weather</span>
+            <input type="search" name="location" id="location" placeholder="Kharkiv">
+            
+            <div class="switch">
+                <label for="deg">Switch to &#176K</label>
+                <input type="checkbox" name="deg" id="deg">
+            </div>
+            
+           
+            <span id="error"></span>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
